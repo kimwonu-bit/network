@@ -2,14 +2,15 @@
 <html lang="ko">
 <head>
   <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Document</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-4bw+/aepP/YC94hEpVNVgiZdgIC5+VKNBQNGCHeKRQN+PtmoHDEXuppvnDJzQIu9" crossorigin="anonymous">
+  <title>index</title>
+  <script src="{{ url_for('static', filename='index.js') }}"></script>
 </head>
 <body>
-  <h1>클릭 시 숫자 증가</h1>
-  <div font-size="64">0<div>
-  <div>수 증가</div>
-  <div>전송</div>
-  <p></p>
+	<p>클릭 시 숫자 증가</p>
+	<h1 id="number">0</h1>
+	<button type="button" id="count">수 증가</button>
+	<button type="submit" id="goSubmit">전송</button>
 </body>
 </html>
+
