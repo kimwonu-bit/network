@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8" />
+    <title>3️⃣ch03✅</title>
+    <style>
+      * {
+        align-items: center;
+      }
+      #OnLED {
+        display: none;
+      }
+      button {
+        font-size: 36px;
+        width: 200px;
+        height: 100px;
+        color: white;
+        border-radius: 15px;
+        background-color: green;
+        margin: 40px;
+        transition: all 0.5s;
+      }
+      button:hover {
+        cursor: pointer;
+        transform: scale(1.1);
+      }
+      #on {
+        background-color: blue;
+        width: 200px;
+        height: 100px;
+        color: rgb(210, 195, 195);
+        border-radius: 15px;
+      }
+      #off {
+        background-color: green;
+        width: 200px;
+        height: 100px;
+        color: white;
+        border-radius: 15px;
+      }
+    </style>
+  </head>
+  <body>
+    <h1>LED ON/OFF</h1>
+    <div id="OffLED">
+      <img src="../static/turnOffLED.png" />
+    </div>
+    <div id="OnLED">
+      <img src="../static/turnOnLED.png" />
+    </div>
+    <div>
+      <button id="on">ON</button>
+      <button id="off">OFF</button>
+    </div>
+    <button id="countButton">count</button>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+    <script src="../static/index.js"></script>
+  </body>
+</html>
